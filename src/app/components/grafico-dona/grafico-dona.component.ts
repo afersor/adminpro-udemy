@@ -30,7 +30,7 @@ export class GraficoDonaComponent implements OnInit {
 
   @Input() pieChartLabels: Label[] = [];
   @Input() pieChartData: number[] = [];
-  @Input() pieChartType: ChartType = ' ';
+  @Input() pieChartType: ChartType;
   public pieChartLegend = true;
   public pieChartColors = [
     {

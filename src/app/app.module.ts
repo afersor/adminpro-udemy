@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 //RUTAS
 import { APP_ROUTES } from './app.routes';
 
+
+
 //MODULOS
 import { PagesModule } from './pages/pages.module';
 
@@ -20,6 +22,9 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 
 import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
@@ -37,10 +42,12 @@ import { FormsModule } from '@angular/forms';
     
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
